@@ -45,6 +45,14 @@
         object-position: center 28%;
       }
 
+      .work-disclosure summary {
+        list-style: none;
+      }
+
+      .work-disclosure summary::-webkit-details-marker {
+        display: none;
+      }
+
       @media (max-width: 900px) {
         .hero {
           grid-template-columns: 1fr;
@@ -79,16 +87,16 @@
     <main id="top">
       <section class="hero section">
         <div class="hero-copy">
-          <p class="eyebrow">Embodied AI / Robot Learning / Multimodal Models</p>
-          <h1>Building grounded intelligence for robots and real-world perception.</h1>
+          <p class="eyebrow">Robotics / VLA / 3D Reconstruction / Manipulation</p>
+          <h1>Moving from neuroscience toward robotics through systems built from the ground up.</h1>
           <p class="hero-text">
             I am Li Xiaotong, a sophomore at Southern University of Science and Technology
-            in the School of Automation and Intelligent Manufacturing. My work focuses on
-            vision-language-action models, 3D scene understanding, robot manipulation, and
-            EEG-based computational neuroscience.
+            in the School of Automation and Intelligent Manufacturing. Recently I have been
+            focused on VLA spatial understanding, 3D reconstruction, and manipulation while
+            learning how to think through the full stack of research execution myself.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#work">View research work</a>
+            <a class="button primary" href="#work">Open work</a>
             <a class="button secondary" href="mailto:12412457@mail.sustech.edu.cn">Email me</a>
           </div>
         </div>
@@ -104,53 +112,59 @@
 
       <section class="section stats" aria-label="Highlights">
         <div>
-          <span>4</span>
-          <p>Reproduced AI and robotics systems</p>
+          <span>Current focus</span>
+          <p>VLA spatial understanding, 3D reconstruction, and robot manipulation</p>
         </div>
         <div>
-          <span>3.82</span>
-          <p>Current university GPA</p>
+          <span>Building process</span>
+          <p>Ideas, reproductions, hardware, compute, and physical setup handled end to end</p>
         </div>
         <div>
-          <span>97</span>
-          <p>TOEFL score</p>
+          <span>Startup</span>
+          <p>A one-stop specialty coffee platform for digital bean management and operations</p>
         </div>
       </section>
 
       <section class="section split" id="experience">
         <div>
-          <p class="eyebrow">Research Direction</p>
-          <h2>From embodied policies to neural signals.</h2>
+          <p class="eyebrow">Direction</p>
+          <h2>From neuroscience toward robotics.</h2>
         </div>
         <div class="body-copy">
           <p>
-            I enjoy reproducing frontier papers and understanding deep learning systems from
-            implementation details to experimental behavior. My current interests include
-            VLA policies, 3D reconstruction for manipulation, multimodal inference, and EEG
-            signal analysis.
+            My path started from neuroscience and has shifted steadily toward robotics.
+            What keeps me engaged now is the combination of spatial reasoning, physical
+            interaction, and system building required to make robot intelligence work.
           </p>
           <ul class="clean-list">
             <li>
-              Research intern at Liu Quanying's Neural Computing and Control Lab at SUSTech,
-              working on EEG-based drug addiction subtype classification with contrastive learning.
+              Recently working on VLA spatial understanding, 3D reconstruction, and
+              manipulation, with a strong interest in how perception and action connect in
+              real-world robotic systems.
             </li>
             <li>
-              Summer research intern at Brain and Intelligence Lab, Tsinghua University,
-              studying EEG signals in music therapy for depression and anxiety.
+              I value the full process behind reproduction work: developing my own approach,
+              rebuilding papers carefully, and figuring out hardware, compute resources, and
+              physical space along the way.
             </li>
             <li>
-              President of SUSTech Coffee Club in 2024, organizing campus and inter-university
-              events.
+              Alongside research, I am building a specialty coffee software product focused on
+              one-stop workflow support and digital bean management.
+            </li>
+            <li>
+              Outside work, I enjoy singing, musicals, jazz, classical music, especially cello,
+              as well as fitness, hiking, and coffee.
             </li>
           </ul>
         </div>
       </section>
 
       <section class="section" id="work">
-        <div class="section-heading">
-          <p class="eyebrow">Selected Work</p>
-          <h2>Reproduced research systems</h2>
-        </div>
+        <details class="work-disclosure" open>
+          <summary class="section-heading">
+            <p class="eyebrow">Selected Work</p>
+            <h2>Reproduced research systems</h2>
+          </summary>
 
         <article class="project feature-project">
           <div class="project-copy">
@@ -175,9 +189,9 @@
               <figcaption>Reproduction result</figcaption>
             </figure>
           </div>
-        </article>
+          </article>
 
-        <article class="project">
+          <article class="project">
           <div class="project-copy">
             <p class="project-kicker">3D Perception / Robot Manipulation</p>
             <h3>Tesseract</h3>
@@ -240,6 +254,7 @@
             <video controls preload="metadata" src="openvla/openvla-rollout.mp4"></video>
           </article>
         </div>
+        </details>
       </section>
 
       <section class="section split" id="skills">
@@ -269,13 +284,13 @@
 
       <section class="section credentials">
         <div>
-          <p class="eyebrow">Recognition</p>
-          <h2>Awards and language scores</h2>
+          <p class="eyebrow">Notes</p>
+          <h2>What I am building around the work</h2>
         </div>
         <div class="credential-list">
-          <p>2025 Guangdong Provincial Climbing Plan Innovation Fund</p>
-          <p>Outstanding Graduate, Shenzhen Senior High School Junior Division</p>
-          <p>College Entrance English 144 / 150 / CET-4 652 / TOEFL 97</p>
+          <p>Specialty coffee software for digital bean management and operational workflow</p>
+          <p>Interest in thoughtful product design, from niche tools to polished everyday systems</p>
+          <p>Singing, musicals, jazz, classical music, cello, fitness, hiking, and coffee</p>
         </div>
       </section>
     </main>
