@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Li Xiaotong | Robotics and Embodied AI</title>
     <meta
+      id="meta-description"
       name="description"
       content="Li Xiaotong's personal website covering robotics research, startup interests, learning paths, and selected embodied AI builds."
     />
@@ -14,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=layout-3" />
+    <link rel="stylesheet" href="styles.css?v=layout-4" />
     <style>
       .hero {
         grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
@@ -73,85 +74,91 @@
       }
     </style>
   </head>
-  <body>
+  <body data-lang="en">
     <header class="site-header">
       <a class="brand" href="#top">Li Xiaotong</a>
-      <nav aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#startup">Startup</a>
-        <a href="#interests">Interests</a>
-        <a href="#learning">Learning</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-tools">
+        <nav aria-label="Primary navigation">
+          <a id="nav-about" href="#about">About</a>
+          <a id="nav-research" href="#research">Research</a>
+          <a id="nav-startup" href="#startup">Startup</a>
+          <a id="nav-interests" href="#interests">Interests</a>
+          <a id="nav-learning" href="#learning">Learning</a>
+          <a id="nav-contact" href="#contact">Contact</a>
+        </nav>
+        <div class="language-switcher" aria-label="Language switcher">
+          <button class="lang-button is-active" data-lang-option="en" type="button">EN</button>
+          <button class="lang-button" data-lang-option="zh" type="button">中文</button>
+        </div>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero section">
         <div class="hero-copy">
-          <p class="eyebrow">Robotics / VLA / 3D Reconstruction / Manipulation</p>
-          <h1>Building toward robotics from the ground up, from ideas and reproductions to hardware and real-world setup.</h1>
-          <p class="hero-text">
+          <p class="eyebrow" id="hero-eyebrow">Robotics / VLA / 3D Reconstruction / Manipulation</p>
+          <h1 id="hero-title">Building toward robotics from the ground up, from ideas and reproductions to hardware and real-world setup.</h1>
+          <p class="hero-text" id="hero-text">
             I am Li Xiaotong, an undergraduate at Southern University of Science and
             Technology. My recent work centers on VLA spatial understanding, 3D
             reconstruction, and robot manipulation, with a strong interest in making
             research executable beyond the paper.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#research">View research</a>
-            <a class="button secondary" href="mailto:12412457@mail.sustech.edu.cn">Email me</a>
+            <a class="button primary" id="hero-primary" href="#research">View research</a>
+            <a class="button secondary" id="hero-secondary" href="mailto:12412457@mail.sustech.edu.cn">Email me</a>
           </div>
         </div>
         <aside class="profile-panel" aria-label="Profile summary">
-          <img src="profile.jpg" alt="Portrait of Li Xiaotong" />
+          <img id="profile-image" src="profile.jpg" alt="Portrait of Li Xiaotong" />
           <div>
             <h2>Li Xiaotong</h2>
-            <p>Southern University of Science and Technology</p>
-            <p>Automation and Intelligent Manufacturing</p>
-            <p>Shenzhen, China</p>
+            <p id="profile-school">Southern University of Science and Technology</p>
+            <p id="profile-major">Automation and Intelligent Manufacturing</p>
+            <p id="profile-location">Shenzhen, China</p>
           </div>
         </aside>
       </section>
 
       <section class="section stats" aria-label="Highlights">
         <div>
-          <span>Current Focus</span>
-          <p>VLA spatial understanding, 3D reconstruction, and manipulation for embodied systems</p>
+          <span id="stat-1-title">Current Focus</span>
+          <p id="stat-1-text">VLA spatial understanding, 3D reconstruction, and manipulation for embodied systems</p>
         </div>
         <div>
-          <span>How I Work</span>
-          <p>Thinking through the approach, reproducing systems, and handling hardware, compute, and space</p>
+          <span id="stat-2-title">How I Work</span>
+          <p id="stat-2-text">Thinking through the approach, reproducing systems, and handling hardware, compute, and space</p>
         </div>
         <div>
-          <span>Open To</span>
-          <p>Research conversations, smart hardware ideas, hackathon teams, and coffee chats</p>
+          <span id="stat-3-title">Open To</span>
+          <p id="stat-3-text">Research conversations, smart hardware ideas, hackathon teams, and coffee chats</p>
         </div>
       </section>
 
       <section class="section split" id="about">
         <div>
-          <p class="eyebrow">About</p>
-          <h2>From neuroscience toward robotics.</h2>
+          <p class="eyebrow" id="about-eyebrow">About</p>
+          <h2 id="about-title">From neuroscience toward robotics.</h2>
         </div>
         <div class="body-copy">
-          <p>
+          <p id="about-text">
             My academic direction has moved from neuroscience toward robotics. What keeps
             me engaged now is the combination of spatial reasoning, perception, action,
             and system building required to make embodied intelligence work in the real world.
           </p>
           <ul class="clean-list">
-            <li>I am especially interested in the bridge between multimodal understanding and physical interaction.</li>
-            <li>I care about the full execution loop: problem framing, reproduction, debugging, deployment constraints, and iteration.</li>
-            <li>I prefer work that connects model intelligence with concrete robotic capability instead of staying purely conceptual.</li>
+            <li id="about-item-1">I am especially interested in the bridge between multimodal understanding and physical interaction.</li>
+            <li id="about-item-2">I care about the full execution loop: problem framing, reproduction, debugging, deployment constraints, and iteration.</li>
+            <li id="about-item-3">I prefer work that connects model intelligence with concrete robotic capability instead of staying purely conceptual.</li>
           </ul>
         </div>
       </section>
 
       <section class="section" id="research">
         <div class="section-heading">
-          <p class="eyebrow">Research</p>
-          <h2>Selected builds and reproduced systems</h2>
-          <p class="section-lead">
+          <p class="eyebrow" id="research-eyebrow">Research</p>
+          <h2 id="research-title">Selected builds and reproduced systems</h2>
+          <p class="section-lead" id="research-lead">
             Recently I have been working around VLA spatial understanding, 3D
             reconstruction, and manipulation. These projects reflect how I learn:
             think through the system, rebuild it carefully, and solve the practical
@@ -161,55 +168,55 @@
 
         <details class="work-disclosure" open>
           <summary class="section-heading section-heading-compact">
-            <h3>Open project gallery</h3>
+            <h3 id="research-toggle">Open project gallery</h3>
           </summary>
 
           <article class="project feature-project">
             <div class="project-copy">
-              <p class="project-kicker">Vision-Language-Action</p>
+              <p class="project-kicker" id="dreamvla-kicker">Vision-Language-Action</p>
               <h3>DreamVLA</h3>
-              <p>
+              <p id="dreamvla-text">
                 DreamVLA integrates world-model imagination into robot manipulation policy
                 learning through image and depth prediction.
               </p>
             </div>
             <div class="gallery three">
               <figure>
-                <img src="dreamvla/dreamvla-depth.jpg" alt="DreamVLA depth prediction output" />
-                <figcaption>Depth prediction</figcaption>
+                <img id="dreamvla-depth-image" src="dreamvla/dreamvla-depth.jpg" alt="DreamVLA depth prediction output" />
+                <figcaption id="dreamvla-depth-caption">Depth prediction</figcaption>
               </figure>
               <figure>
-                <img src="dreamvla/dreamvla-image.jpg" alt="DreamVLA image prediction output" />
-                <figcaption>Image prediction</figcaption>
+                <img id="dreamvla-image-image" src="dreamvla/dreamvla-image.jpg" alt="DreamVLA image prediction output" />
+                <figcaption id="dreamvla-image-caption">Image prediction</figcaption>
               </figure>
               <figure>
-                <img src="dreamvla/dreamvla-reproduction.jpeg" alt="DreamVLA reproduction result" />
-                <figcaption>Reproduction result</figcaption>
+                <img id="dreamvla-repro-image" src="dreamvla/dreamvla-reproduction.jpeg" alt="DreamVLA reproduction result" />
+                <figcaption id="dreamvla-repro-caption">Reproduction result</figcaption>
               </figure>
             </div>
           </article>
 
           <article class="project">
             <div class="project-copy">
-              <p class="project-kicker">3D Perception / Robot Manipulation</p>
+              <p class="project-kicker" id="tesseract-kicker">3D Perception / Robot Manipulation</p>
               <h3>Tesseract</h3>
-              <p>
+              <p id="tesseract-text">
                 Tesseract uses stereo depth estimation and 3D scene reconstruction to strengthen
                 robot policy learning with spatial representations.
               </p>
             </div>
             <div class="gallery three">
               <figure>
-                <img src="tesseract/tesseract-3d-reconstruction.jpg" alt="Tesseract 3D scene reconstruction" />
-                <figcaption>3D reconstruction</figcaption>
+                <img id="tesseract-recon-image" src="tesseract/tesseract-3d-reconstruction.jpg" alt="Tesseract 3D scene reconstruction" />
+                <figcaption id="tesseract-recon-caption">3D reconstruction</figcaption>
               </figure>
               <figure>
-                <img src="tesseract/tesseract-depth-primary.png" alt="Primary depth map from Tesseract" />
-                <figcaption>Primary depth map</figcaption>
+                <img id="tesseract-depth-primary-image" src="tesseract/tesseract-depth-primary.png" alt="Primary depth map from Tesseract" />
+                <figcaption id="tesseract-depth-primary-caption">Primary depth map</figcaption>
               </figure>
               <figure>
-                <img src="tesseract/tesseract-depth-wrist.png" alt="Wrist depth map from Tesseract" />
-                <figcaption>Wrist depth map</figcaption>
+                <img id="tesseract-depth-wrist-image" src="tesseract/tesseract-depth-wrist.png" alt="Wrist depth map from Tesseract" />
+                <figcaption id="tesseract-depth-wrist-caption">Wrist depth map</figcaption>
               </figure>
             </div>
             <div class="video-grid">
@@ -221,30 +228,30 @@
           <div class="project-grid">
             <article class="project compact">
               <div class="project-copy">
-                <p class="project-kicker">3D Scene Understanding</p>
+                <p class="project-kicker" id="vggt-kicker">3D Scene Understanding</p>
                 <h3>VGGT</h3>
-                <p>
+                <p id="vggt-text">
                   VGGT performs feed-forward 3D understanding, including camera poses, depth maps,
                   and point-cloud reconstruction in a single forward pass.
                 </p>
               </div>
               <div class="gallery two">
                 <figure>
-                  <img src="VGGT/VGGT.jpg" alt="VGGT model overview" />
-                  <figcaption>Model overview</figcaption>
+                  <img id="vggt-overview-image" src="VGGT/VGGT.jpg" alt="VGGT model overview" />
+                  <figcaption id="vggt-overview-caption">Model overview</figcaption>
                 </figure>
                 <figure>
-                  <img src="VGGT/VGGTpoint.jpeg" alt="VGGT point cloud reconstruction" />
-                  <figcaption>Point cloud</figcaption>
+                  <img id="vggt-point-image" src="VGGT/VGGTpoint.jpeg" alt="VGGT point cloud reconstruction" />
+                  <figcaption id="vggt-point-caption">Point cloud</figcaption>
                 </figure>
               </div>
             </article>
 
             <article class="project compact">
               <div class="project-copy">
-                <p class="project-kicker">Open-Source VLA</p>
+                <p class="project-kicker" id="openvla-kicker">Open-Source VLA</p>
                 <h3>OpenVLA</h3>
-                <p>
+                <p id="openvla-text">
                   OpenVLA is an open-source vision-language-action model for general-purpose robot
                   manipulation, fine-tuned from a large vision-language model.
                 </p>
@@ -257,75 +264,75 @@
 
       <section class="section split" id="startup">
         <div>
-          <p class="eyebrow">Startup</p>
-          <h2>Building software around specialty coffee.</h2>
+          <p class="eyebrow" id="startup-eyebrow">Startup</p>
+          <h2 id="startup-title">Building software around specialty coffee.</h2>
         </div>
         <div class="body-copy">
-          <p>
+          <p id="startup-text">
             I am currently exploring a one-stop specialty coffee software product with a
             focus on digital bean management, workflow organization, and better operational visibility.
           </p>
           <ul class="clean-list">
-            <li>I am interested in products that connect physical goods, data, and everyday decision making.</li>
-            <li>Smart hardware and software at the edge of the physical world are especially exciting to me.</li>
-            <li>I want to keep learning how product sense, engineering execution, and founder thinking come together.</li>
+            <li id="startup-item-1">I am interested in products that connect physical goods, data, and everyday decision making.</li>
+            <li id="startup-item-2">Smart hardware and software at the edge of the physical world are especially exciting to me.</li>
+            <li id="startup-item-3">I want to keep learning how product sense, engineering execution, and founder thinking come together.</li>
           </ul>
         </div>
       </section>
 
       <section class="section" id="interests">
         <div class="section-heading">
-          <p class="eyebrow">Interests</p>
-          <h2>Work, art, movement, and good conversations.</h2>
+          <p class="eyebrow" id="interests-eyebrow">Interests</p>
+          <h2 id="interests-title">Work, art, movement, and good conversations.</h2>
         </div>
         <div class="interest-grid">
           <div class="interest-card">
-            <h3>Music</h3>
-            <p>I enjoy singing and spend time with musicals, jazz, and classical music, especially cello.</p>
+            <h3 id="interest-music-title">Music</h3>
+            <p id="interest-music-text">I enjoy singing and spend time with musicals, jazz, and classical music, especially cello.</p>
           </div>
           <div class="interest-card">
-            <h3>Movement</h3>
-            <p>Fitness and hiking help me reset, think clearly, and keep a long-term rhythm for ambitious work.</p>
+            <h3 id="interest-movement-title">Movement</h3>
+            <p id="interest-movement-text">Fitness and hiking help me reset, think clearly, and keep a long-term rhythm for ambitious work.</p>
           </div>
           <div class="interest-card">
-            <h3>Hackathons</h3>
-            <p>If you are building a strong hackathon team and want someone who likes technical depth and fast iteration, reach out.</p>
+            <h3 id="interest-hackathon-title">Hackathons</h3>
+            <p id="interest-hackathon-text">If you are building a strong hackathon team and want someone who likes technical depth and fast iteration, reach out.</p>
           </div>
           <div class="interest-card">
-            <h3>Coffee Chats</h3>
-            <p>I am always happy to talk about robotics, smart hardware, startup ideas, or simply meet over coffee.</p>
+            <h3 id="interest-coffee-title">Coffee Chats</h3>
+            <p id="interest-coffee-text">I am always happy to talk about robotics, smart hardware, startup ideas, or simply meet over coffee.</p>
           </div>
         </div>
       </section>
 
       <section class="section" id="learning">
         <div class="section-heading">
-          <p class="eyebrow">Learning</p>
-          <h2>What I am studying now.</h2>
-          <p class="section-lead">
+          <p class="eyebrow" id="learning-eyebrow">Learning</p>
+          <h2 id="learning-title">What I am studying now.</h2>
+          <p class="section-lead" id="learning-lead">
             My learning path combines self-study from open courses with university coursework
             that supports a deeper foundation in mathematics, systems, and engineering.
           </p>
         </div>
         <div class="course-grid">
           <article class="course-panel">
-            <p class="project-kicker">Self-Study</p>
-            <h3>Open courses and references</h3>
+            <p class="project-kicker" id="self-study-kicker">Self-Study</p>
+            <h3 id="self-study-title">Open courses and references</h3>
             <ul class="link-list">
-              <li><a href="https://stanford-cs336.github.io/spring2025/" target="_blank" rel="noreferrer">CS336: Language Modeling from Scratch</a></li>
-              <li><a href="https://web.stanford.edu/class/cs224n/" target="_blank" rel="noreferrer">CS224N: Natural Language Processing with Deep Learning</a></li>
-              <li><a href="http://cs231a.stanford.edu/" target="_blank" rel="noreferrer">CS231A: Computer Vision, From 3D Reconstruction to Recognition</a></li>
-              <li><a href="https://underactuated.mit.edu/" target="_blank" rel="noreferrer">Underactuated Robotics</a></li>
+              <li><a id="course-cs336" href="https://stanford-cs336.github.io/spring2025/" target="_blank" rel="noreferrer">CS336: Language Modeling from Scratch</a></li>
+              <li><a id="course-cs224n" href="https://web.stanford.edu/class/cs224n/" target="_blank" rel="noreferrer">CS224N: Natural Language Processing with Deep Learning</a></li>
+              <li><a id="course-cs231a" href="http://cs231a.stanford.edu/" target="_blank" rel="noreferrer">CS231A: Computer Vision, From 3D Reconstruction to Recognition</a></li>
+              <li><a id="course-underactuated" href="https://underactuated.mit.edu/" target="_blank" rel="noreferrer">Underactuated Robotics</a></li>
             </ul>
           </article>
           <article class="course-panel">
-            <p class="project-kicker">University Courses</p>
-            <h3>SUSTech foundations</h3>
+            <p class="project-kicker" id="university-kicker">University Courses</p>
+            <h3 id="university-title">SUSTech foundations</h3>
             <ul class="link-list">
-              <li><a href="https://eee.sustech.edu.cn/feichen/teaching.html" target="_blank" rel="noreferrer">Signals and Systems</a></li>
-              <li><a href="https://math.sustech.edu.cn/e/liuzhihui" target="_blank" rel="noreferrer">Calculus and Linear Algebra</a></li>
-              <li><a href="https://math.sustech.edu.cn/e/wulongting" target="_blank" rel="noreferrer">Linear Algebra</a></li>
-              <li><a href="https://course-tao.sustech.edu.cn/kcxxweb/KcxxwebEnglishAPP" target="_blank" rel="noreferrer">SUSTech Course Search Portal</a></li>
+              <li><a id="course-signals" href="https://eee.sustech.edu.cn/feichen/teaching.html" target="_blank" rel="noreferrer">Signals and Systems</a></li>
+              <li><a id="course-calculus" href="https://math.sustech.edu.cn/e/liuzhihui" target="_blank" rel="noreferrer">Calculus and Linear Algebra</a></li>
+              <li><a id="course-linear-algebra" href="https://math.sustech.edu.cn/e/wulongting" target="_blank" rel="noreferrer">Linear Algebra</a></li>
+              <li><a id="course-search" href="https://course-tao.sustech.edu.cn/kcxxweb/KcxxwebEnglishAPP" target="_blank" rel="noreferrer">SUSTech Course Search Portal</a></li>
             </ul>
           </article>
         </div>
@@ -334,10 +341,377 @@
 
     <footer class="footer" id="contact">
       <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Open to research collaboration, hackathon teams, startup conversations, and coffee chats.</h2>
+        <p class="eyebrow" id="contact-eyebrow">Contact</p>
+        <h2 id="contact-title">Open to research collaboration, hackathon teams, startup conversations, and coffee chats.</h2>
       </div>
       <a href="mailto:12412457@mail.sustech.edu.cn">12412457@mail.sustech.edu.cn</a>
     </footer>
+
+    <script>
+      const translations = {
+        en: {
+          pageTitle: "Li Xiaotong | Robotics and Embodied AI",
+          metaDescription:
+            "Li Xiaotong's personal website covering robotics research, startup interests, learning paths, and selected embodied AI builds.",
+          navAbout: "About",
+          navResearch: "Research",
+          navStartup: "Startup",
+          navInterests: "Interests",
+          navLearning: "Learning",
+          navContact: "Contact",
+          heroEyebrow: "Robotics / VLA / 3D Reconstruction / Manipulation",
+          heroTitle:
+            "Building toward robotics from the ground up, from ideas and reproductions to hardware and real-world setup.",
+          heroText:
+            "I am Li Xiaotong, an undergraduate at Southern University of Science and Technology. My recent work centers on VLA spatial understanding, 3D reconstruction, and robot manipulation, with a strong interest in making research executable beyond the paper.",
+          heroPrimary: "View research",
+          heroSecondary: "Email me",
+          profileImageAlt: "Portrait of Li Xiaotong",
+          profileSchool: "Southern University of Science and Technology",
+          profileMajor: "Automation and Intelligent Manufacturing",
+          profileLocation: "Shenzhen, China",
+          stat1Title: "Current Focus",
+          stat1Text: "VLA spatial understanding, 3D reconstruction, and manipulation for embodied systems",
+          stat2Title: "How I Work",
+          stat2Text: "Thinking through the approach, reproducing systems, and handling hardware, compute, and space",
+          stat3Title: "Open To",
+          stat3Text: "Research conversations, smart hardware ideas, hackathon teams, and coffee chats",
+          aboutEyebrow: "About",
+          aboutTitle: "From neuroscience toward robotics.",
+          aboutText:
+            "My academic direction has moved from neuroscience toward robotics. What keeps me engaged now is the combination of spatial reasoning, perception, action, and system building required to make embodied intelligence work in the real world.",
+          aboutItem1: "I am especially interested in the bridge between multimodal understanding and physical interaction.",
+          aboutItem2: "I care about the full execution loop: problem framing, reproduction, debugging, deployment constraints, and iteration.",
+          aboutItem3: "I prefer work that connects model intelligence with concrete robotic capability instead of staying purely conceptual.",
+          researchEyebrow: "Research",
+          researchTitle: "Selected builds and reproduced systems",
+          researchLead:
+            "Recently I have been working around VLA spatial understanding, 3D reconstruction, and manipulation. These projects reflect how I learn: think through the system, rebuild it carefully, and solve the practical issues around hardware, compute, and physical setup.",
+          researchToggle: "Open project gallery",
+          dreamvlaKicker: "Vision-Language-Action",
+          dreamvlaText:
+            "DreamVLA integrates world-model imagination into robot manipulation policy learning through image and depth prediction.",
+          dreamvlaDepthAlt: "DreamVLA depth prediction output",
+          dreamvlaDepthCaption: "Depth prediction",
+          dreamvlaImageAlt: "DreamVLA image prediction output",
+          dreamvlaImageCaption: "Image prediction",
+          dreamvlaReproAlt: "DreamVLA reproduction result",
+          dreamvlaReproCaption: "Reproduction result",
+          tesseractKicker: "3D Perception / Robot Manipulation",
+          tesseractText:
+            "Tesseract uses stereo depth estimation and 3D scene reconstruction to strengthen robot policy learning with spatial representations.",
+          tesseractReconAlt: "Tesseract 3D scene reconstruction",
+          tesseractReconCaption: "3D reconstruction",
+          tesseractDepthPrimaryAlt: "Primary depth map from Tesseract",
+          tesseractDepthPrimaryCaption: "Primary depth map",
+          tesseractDepthWristAlt: "Wrist depth map from Tesseract",
+          tesseractDepthWristCaption: "Wrist depth map",
+          vggtKicker: "3D Scene Understanding",
+          vggtText:
+            "VGGT performs feed-forward 3D understanding, including camera poses, depth maps, and point-cloud reconstruction in a single forward pass.",
+          vggtOverviewAlt: "VGGT model overview",
+          vggtOverviewCaption: "Model overview",
+          vggtPointAlt: "VGGT point cloud reconstruction",
+          vggtPointCaption: "Point cloud",
+          openvlaKicker: "Open-Source VLA",
+          openvlaText:
+            "OpenVLA is an open-source vision-language-action model for general-purpose robot manipulation, fine-tuned from a large vision-language model.",
+          startupEyebrow: "Startup",
+          startupTitle: "Building software around specialty coffee.",
+          startupText:
+            "I am currently exploring a one-stop specialty coffee software product with a focus on digital bean management, workflow organization, and better operational visibility.",
+          startupItem1:
+            "I am interested in products that connect physical goods, data, and everyday decision making.",
+          startupItem2:
+            "Smart hardware and software at the edge of the physical world are especially exciting to me.",
+          startupItem3:
+            "I want to keep learning how product sense, engineering execution, and founder thinking come together.",
+          interestsEyebrow: "Interests",
+          interestsTitle: "Work, art, movement, and good conversations.",
+          interestMusicTitle: "Music",
+          interestMusicText:
+            "I enjoy singing and spend time with musicals, jazz, and classical music, especially cello.",
+          interestMovementTitle: "Movement",
+          interestMovementText:
+            "Fitness and hiking help me reset, think clearly, and keep a long-term rhythm for ambitious work.",
+          interestHackathonTitle: "Hackathons",
+          interestHackathonText:
+            "If you are building a strong hackathon team and want someone who likes technical depth and fast iteration, reach out.",
+          interestCoffeeTitle: "Coffee Chats",
+          interestCoffeeText:
+            "I am always happy to talk about robotics, smart hardware, startup ideas, or simply meet over coffee.",
+          learningEyebrow: "Learning",
+          learningTitle: "What I am studying now.",
+          learningLead:
+            "My learning path combines self-study from open courses with university coursework that supports a deeper foundation in mathematics, systems, and engineering.",
+          selfStudyKicker: "Self-Study",
+          selfStudyTitle: "Open courses and references",
+          courseCs336: "CS336: Language Modeling from Scratch",
+          courseCs224n: "CS224N: Natural Language Processing with Deep Learning",
+          courseCs231a: "CS231A: Computer Vision, From 3D Reconstruction to Recognition",
+          courseUnderactuated: "Underactuated Robotics",
+          universityKicker: "University Courses",
+          universityTitle: "SUSTech foundations",
+          courseSignals: "Signals and Systems",
+          courseCalculus: "Calculus and Linear Algebra",
+          courseLinearAlgebra: "Linear Algebra",
+          courseSearch: "SUSTech Course Search Portal",
+          contactEyebrow: "Contact",
+          contactTitle:
+            "Open to research collaboration, hackathon teams, startup conversations, and coffee chats."
+        },
+        zh: {
+          pageTitle: "李晓彤 | 机器人与具身智能",
+          metaDescription:
+            "李晓彤的个人主页，涵盖机器人科研、创业兴趣、学习路径与代表性具身智能项目。",
+          navAbout: "简介",
+          navResearch: "科研",
+          navStartup: "创业",
+          navInterests: "兴趣",
+          navLearning: "学习",
+          navContact: "联系",
+          heroEyebrow: "机器人 / VLA / 三维重建 / 操作",
+          heroTitle:
+            "从想法、复现到硬件与真实场地搭建，持续从零到一走向机器人系统。",
+          heroText:
+            "我是李晓彤，南方科技大学本科生。最近的工作主要围绕 VLA 空间理解、三维重建与机器人 manipulation，也在持续探索怎样把研究真正落到可执行的系统里，而不只停留在论文层面。",
+          heroPrimary: "查看科研",
+          heroSecondary: "邮件联系",
+          profileImageAlt: "李晓彤的照片",
+          profileSchool: "南方科技大学",
+          profileMajor: "自动化与智能制造",
+          profileLocation: "中国深圳",
+          stat1Title: "当前关注",
+          stat1Text: "面向具身系统的 VLA 空间理解、三维重建与 manipulation",
+          stat2Title: "做事方式",
+          stat2Text: "从思路设计、工作复现，到硬件、算力和场地问题都愿意自己推进",
+          stat3Title: "欢迎交流",
+          stat3Text: "科研合作、智能硬件创业想法、黑客松组队，以及 coffee chat",
+          aboutEyebrow: "简介",
+          aboutTitle: "从神经科学走向机器人。",
+          aboutText:
+            "我的学术兴趣正在从神经科学逐步转向机器人。真正吸引我的，是空间理解、感知与行动闭环，以及把系统真正做出来所需要的工程搭建过程。",
+          aboutItem1: "我尤其关注多模态理解如何与真实世界中的物理交互连接起来。",
+          aboutItem2: "我在意完整的执行链路，包括问题定义、工作复现、调试、部署约束和持续迭代。",
+          aboutItem3: "相比停留在概念层面，我更偏好能把模型能力真正落到机器人能力上的工作。",
+          researchEyebrow: "科研",
+          researchTitle: "代表性复现与系统搭建",
+          researchLead:
+            "最近我主要在做 VLA 空间理解、三维重建和 manipulation。下面这些项目也代表了我的学习方式：先想清楚系统，再认真复现，并一路解决硬件、算力和真实场地中的实际问题。",
+          researchToggle: "展开项目列表",
+          dreamvlaKicker: "视觉-语言-动作",
+          dreamvlaText:
+            "DreamVLA 将 world-model imagination 引入机器人 manipulation policy learning，通过图像与深度预测增强策略学习。",
+          dreamvlaDepthAlt: "DreamVLA 深度预测结果",
+          dreamvlaDepthCaption: "深度预测",
+          dreamvlaImageAlt: "DreamVLA 图像预测结果",
+          dreamvlaImageCaption: "图像预测",
+          dreamvlaReproAlt: "DreamVLA 复现结果",
+          dreamvlaReproCaption: "复现结果",
+          tesseractKicker: "三维感知 / 机器人操作",
+          tesseractText:
+            "Tesseract 结合双目深度估计与三维场景重建，用空间表征来增强机器人策略学习。",
+          tesseractReconAlt: "Tesseract 三维场景重建",
+          tesseractReconCaption: "三维重建",
+          tesseractDepthPrimaryAlt: "Tesseract 主视角深度图",
+          tesseractDepthPrimaryCaption: "主视角深度图",
+          tesseractDepthWristAlt: "Tesseract 腕部视角深度图",
+          tesseractDepthWristCaption: "腕部视角深度图",
+          vggtKicker: "三维场景理解",
+          vggtText:
+            "VGGT 以单次前向推理完成三维理解任务，包括相机位姿、深度图与点云重建。",
+          vggtOverviewAlt: "VGGT 模型概览",
+          vggtOverviewCaption: "模型概览",
+          vggtPointAlt: "VGGT 点云重建",
+          vggtPointCaption: "点云结果",
+          openvlaKicker: "开源 VLA",
+          openvlaText:
+            "OpenVLA 是一个面向通用机器人操作的开源 vision-language-action 模型，基于大型视觉语言模型进行微调。",
+          startupEyebrow: "创业",
+          startupTitle: "围绕精品咖啡做软件产品。",
+          startupText:
+            "我目前在探索一款面向精品咖啡场景的一站式软件，重点放在豆种数字化管理、流程组织与经营可视化上。",
+          startupItem1: "我对连接实体商品、数据与日常决策的软件产品很感兴趣。",
+          startupItem2: "智能硬件以及贴近真实物理世界的软件创业方向，对我尤其有吸引力。",
+          startupItem3: "我也希望持续学习产品感、工程执行与 founder thinking 如何真正结合起来。",
+          interestsEyebrow: "兴趣",
+          interestsTitle: "工作之外，也在认真生活和交流。",
+          interestMusicTitle: "音乐",
+          interestMusicText: "我喜欢唱歌，也喜欢音乐剧、爵士和古典音乐，尤其偏爱大提琴。",
+          interestMovementTitle: "运动与徒步",
+          interestMovementText: "健身和徒步能帮助我调整状态、整理思路，也让我更能长期做有挑战的事。",
+          interestHackathonTitle: "黑客松",
+          interestHackathonText: "如果你在组一支认真做事、节奏快、愿意啃技术细节的黑客松队伍，可以来找我。",
+          interestCoffeeTitle: "Coffee Chat",
+          interestCoffeeText: "无论是机器人、智能硬件、创业想法，还是单纯约杯咖啡聊聊，我都很欢迎。",
+          learningEyebrow: "学习",
+          learningTitle: "最近在学什么。",
+          learningLead:
+            "我的学习路径一部分来自公开课程自学，一部分来自学校课程。前者帮助我追最新方向，后者让我继续补足数学、系统与工程基础。",
+          selfStudyKicker: "自学课程",
+          selfStudyTitle: "公开课程与参考资料",
+          courseCs336: "CS336：从零开始训练语言模型",
+          courseCs224n: "CS224N：深度学习自然语言处理",
+          courseCs231a: "CS231A：从三维重建到识别的计算机视觉",
+          courseUnderactuated: "欠驱动机器人",
+          universityKicker: "学校课程",
+          universityTitle: "南科大基础课程",
+          courseSignals: "信号与系统",
+          courseCalculus: "微积分与线性代数",
+          courseLinearAlgebra: "线性代数",
+          courseSearch: "南科大课程检索",
+          contactEyebrow: "联系",
+          contactTitle: "欢迎交流科研、黑客松、创业想法，或者约一场 coffee chat。"
+        }
+      };
+
+      const bindings = {
+        pageTitle: { type: "title" },
+        metaDescription: { type: "meta", selector: "#meta-description", attribute: "content" },
+        navAbout: { selector: "#nav-about" },
+        navResearch: { selector: "#nav-research" },
+        navStartup: { selector: "#nav-startup" },
+        navInterests: { selector: "#nav-interests" },
+        navLearning: { selector: "#nav-learning" },
+        navContact: { selector: "#nav-contact" },
+        heroEyebrow: { selector: "#hero-eyebrow" },
+        heroTitle: { selector: "#hero-title" },
+        heroText: { selector: "#hero-text" },
+        heroPrimary: { selector: "#hero-primary" },
+        heroSecondary: { selector: "#hero-secondary" },
+        profileImageAlt: { selector: "#profile-image", attribute: "alt" },
+        profileSchool: { selector: "#profile-school" },
+        profileMajor: { selector: "#profile-major" },
+        profileLocation: { selector: "#profile-location" },
+        stat1Title: { selector: "#stat-1-title" },
+        stat1Text: { selector: "#stat-1-text" },
+        stat2Title: { selector: "#stat-2-title" },
+        stat2Text: { selector: "#stat-2-text" },
+        stat3Title: { selector: "#stat-3-title" },
+        stat3Text: { selector: "#stat-3-text" },
+        aboutEyebrow: { selector: "#about-eyebrow" },
+        aboutTitle: { selector: "#about-title" },
+        aboutText: { selector: "#about-text" },
+        aboutItem1: { selector: "#about-item-1" },
+        aboutItem2: { selector: "#about-item-2" },
+        aboutItem3: { selector: "#about-item-3" },
+        researchEyebrow: { selector: "#research-eyebrow" },
+        researchTitle: { selector: "#research-title" },
+        researchLead: { selector: "#research-lead" },
+        researchToggle: { selector: "#research-toggle" },
+        dreamvlaKicker: { selector: "#dreamvla-kicker" },
+        dreamvlaText: { selector: "#dreamvla-text" },
+        dreamvlaDepthAlt: { selector: "#dreamvla-depth-image", attribute: "alt" },
+        dreamvlaDepthCaption: { selector: "#dreamvla-depth-caption" },
+        dreamvlaImageAlt: { selector: "#dreamvla-image-image", attribute: "alt" },
+        dreamvlaImageCaption: { selector: "#dreamvla-image-caption" },
+        dreamvlaReproAlt: { selector: "#dreamvla-repro-image", attribute: "alt" },
+        dreamvlaReproCaption: { selector: "#dreamvla-repro-caption" },
+        tesseractKicker: { selector: "#tesseract-kicker" },
+        tesseractText: { selector: "#tesseract-text" },
+        tesseractReconAlt: { selector: "#tesseract-recon-image", attribute: "alt" },
+        tesseractReconCaption: { selector: "#tesseract-recon-caption" },
+        tesseractDepthPrimaryAlt: { selector: "#tesseract-depth-primary-image", attribute: "alt" },
+        tesseractDepthPrimaryCaption: { selector: "#tesseract-depth-primary-caption" },
+        tesseractDepthWristAlt: { selector: "#tesseract-depth-wrist-image", attribute: "alt" },
+        tesseractDepthWristCaption: { selector: "#tesseract-depth-wrist-caption" },
+        vggtKicker: { selector: "#vggt-kicker" },
+        vggtText: { selector: "#vggt-text" },
+        vggtOverviewAlt: { selector: "#vggt-overview-image", attribute: "alt" },
+        vggtOverviewCaption: { selector: "#vggt-overview-caption" },
+        vggtPointAlt: { selector: "#vggt-point-image", attribute: "alt" },
+        vggtPointCaption: { selector: "#vggt-point-caption" },
+        openvlaKicker: { selector: "#openvla-kicker" },
+        openvlaText: { selector: "#openvla-text" },
+        startupEyebrow: { selector: "#startup-eyebrow" },
+        startupTitle: { selector: "#startup-title" },
+        startupText: { selector: "#startup-text" },
+        startupItem1: { selector: "#startup-item-1" },
+        startupItem2: { selector: "#startup-item-2" },
+        startupItem3: { selector: "#startup-item-3" },
+        interestsEyebrow: { selector: "#interests-eyebrow" },
+        interestsTitle: { selector: "#interests-title" },
+        interestMusicTitle: { selector: "#interest-music-title" },
+        interestMusicText: { selector: "#interest-music-text" },
+        interestMovementTitle: { selector: "#interest-movement-title" },
+        interestMovementText: { selector: "#interest-movement-text" },
+        interestHackathonTitle: { selector: "#interest-hackathon-title" },
+        interestHackathonText: { selector: "#interest-hackathon-text" },
+        interestCoffeeTitle: { selector: "#interest-coffee-title" },
+        interestCoffeeText: { selector: "#interest-coffee-text" },
+        learningEyebrow: { selector: "#learning-eyebrow" },
+        learningTitle: { selector: "#learning-title" },
+        learningLead: { selector: "#learning-lead" },
+        selfStudyKicker: { selector: "#self-study-kicker" },
+        selfStudyTitle: { selector: "#self-study-title" },
+        courseCs336: { selector: "#course-cs336" },
+        courseCs224n: { selector: "#course-cs224n" },
+        courseCs231a: { selector: "#course-cs231a" },
+        courseUnderactuated: { selector: "#course-underactuated" },
+        universityKicker: { selector: "#university-kicker" },
+        universityTitle: { selector: "#university-title" },
+        courseSignals: { selector: "#course-signals" },
+        courseCalculus: { selector: "#course-calculus" },
+        courseLinearAlgebra: { selector: "#course-linear-algebra" },
+        courseSearch: { selector: "#course-search" },
+        contactEyebrow: { selector: "#contact-eyebrow" },
+        contactTitle: { selector: "#contact-title" }
+      };
+
+      function applyLanguage(lang) {
+        const locale = translations[lang] || translations.en;
+        document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+        document.body.dataset.lang = lang;
+
+        Object.entries(bindings).forEach(([key, config]) => {
+          const value = locale[key];
+          if (value == null) return;
+
+          if (config.type === "title") {
+            document.title = value;
+            return;
+          }
+
+          const element = document.querySelector(config.selector);
+          if (!element) return;
+
+          if (config.type === "meta" || config.attribute) {
+            element.setAttribute(config.attribute, value);
+            return;
+          }
+
+          element.textContent = value;
+        });
+
+        document.querySelectorAll(".lang-button").forEach((button) => {
+          button.classList.toggle("is-active", button.dataset.langOption === lang);
+        });
+
+        try {
+          localStorage.setItem("preferred-language", lang);
+        } catch (error) {
+          console.error("Could not store preferred language", error);
+        }
+      }
+
+      const storedLanguage = (() => {
+        try {
+          return localStorage.getItem("preferred-language");
+        } catch (error) {
+          return null;
+        }
+      })();
+
+      const initialLanguage =
+        storedLanguage || ((navigator.language || "").toLowerCase().startsWith("zh") ? "zh" : "en");
+
+      applyLanguage(initialLanguage);
+
+      document.querySelectorAll(".lang-button").forEach((button) => {
+        button.addEventListener("click", () => {
+          applyLanguage(button.dataset.langOption);
+        });
+      });
+    </script>
   </body>
 </html>

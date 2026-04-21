@@ -6,6 +6,8 @@ This repository contains a static GitHub Pages personal website for Li Xiaotong.
 
 The site presents research interests, reproduced work, startup ideas, and learning paths around robotics, embodied AI, and multimodal systems.
 
+The homepage now supports both English and Chinese, with an in-page language switcher for visitors.
+
 Featured projects:
 
 - DreamVLA
