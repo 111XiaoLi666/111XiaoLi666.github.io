@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Li Xiaotong | Embodied AI Portfolio</title>
+    <title>Li Xiaotong | Robotics and Embodied AI</title>
     <meta
       name="description"
-      content="Li Xiaotong's portfolio in embodied AI, robot learning, multimodal models, and reproduced research projects."
+      content="Li Xiaotong's personal website covering robotics research, startup interests, learning paths, and selected embodied AI builds."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=layout-2" />
+    <link rel="stylesheet" href="styles.css?v=layout-3" />
     <style>
       .hero {
         grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
@@ -25,8 +25,8 @@
       }
 
       h1 {
-        max-width: 720px;
-        font-size: clamp(2.55rem, 4.2vw, 4.2rem);
+        max-width: 760px;
+        font-size: clamp(2.5rem, 4.1vw, 4rem);
         line-height: 1.03;
       }
 
@@ -68,7 +68,7 @@
 
       @media (max-width: 680px) {
         h1 {
-          font-size: clamp(2.35rem, 12vw, 3.4rem);
+          font-size: clamp(2.25rem, 11vw, 3.2rem);
         }
       }
     </style>
@@ -77,9 +77,11 @@
     <header class="site-header">
       <a class="brand" href="#top">Li Xiaotong</a>
       <nav aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#startup">Startup</a>
+        <a href="#interests">Interests</a>
+        <a href="#learning">Learning</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -88,15 +90,15 @@
       <section class="hero section">
         <div class="hero-copy">
           <p class="eyebrow">Robotics / VLA / 3D Reconstruction / Manipulation</p>
-          <h1>Moving from neuroscience toward robotics through systems built from the ground up.</h1>
+          <h1>Building toward robotics from the ground up, from ideas and reproductions to hardware and real-world setup.</h1>
           <p class="hero-text">
-            I am Li Xiaotong, a sophomore at Southern University of Science and Technology
-            in the School of Automation and Intelligent Manufacturing. Recently I have been
-            focused on VLA spatial understanding, 3D reconstruction, and manipulation while
-            learning how to think through the full stack of research execution myself.
+            I am Li Xiaotong, an undergraduate at Southern University of Science and
+            Technology. My recent work centers on VLA spatial understanding, 3D
+            reconstruction, and robot manipulation, with a strong interest in making
+            research executable beyond the paper.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#work">Open work</a>
+            <a class="button primary" href="#research">View research</a>
             <a class="button secondary" href="mailto:12412457@mail.sustech.edu.cn">Email me</a>
           </div>
         </div>
@@ -105,192 +107,227 @@
           <div>
             <h2>Li Xiaotong</h2>
             <p>Southern University of Science and Technology</p>
-            <p>GPA 3.82 / Shenzhen, China</p>
+            <p>Automation and Intelligent Manufacturing</p>
+            <p>Shenzhen, China</p>
           </div>
         </aside>
       </section>
 
       <section class="section stats" aria-label="Highlights">
         <div>
-          <span>Current focus</span>
-          <p>VLA spatial understanding, 3D reconstruction, and robot manipulation</p>
+          <span>Current Focus</span>
+          <p>VLA spatial understanding, 3D reconstruction, and manipulation for embodied systems</p>
         </div>
         <div>
-          <span>Building process</span>
-          <p>Ideas, reproductions, hardware, compute, and physical setup handled end to end</p>
+          <span>How I Work</span>
+          <p>Thinking through the approach, reproducing systems, and handling hardware, compute, and space</p>
         </div>
         <div>
-          <span>Startup</span>
-          <p>A one-stop specialty coffee platform for digital bean management and operations</p>
+          <span>Open To</span>
+          <p>Research conversations, smart hardware ideas, hackathon teams, and coffee chats</p>
         </div>
       </section>
 
-      <section class="section split" id="experience">
+      <section class="section split" id="about">
         <div>
-          <p class="eyebrow">Direction</p>
+          <p class="eyebrow">About</p>
           <h2>From neuroscience toward robotics.</h2>
         </div>
         <div class="body-copy">
           <p>
-            My path started from neuroscience and has shifted steadily toward robotics.
-            What keeps me engaged now is the combination of spatial reasoning, physical
-            interaction, and system building required to make robot intelligence work.
+            My academic direction has moved from neuroscience toward robotics. What keeps
+            me engaged now is the combination of spatial reasoning, perception, action,
+            and system building required to make embodied intelligence work in the real world.
           </p>
           <ul class="clean-list">
-            <li>
-              Recently working on VLA spatial understanding, 3D reconstruction, and
-              manipulation, with a strong interest in how perception and action connect in
-              real-world robotic systems.
-            </li>
-            <li>
-              I value the full process behind reproduction work: developing my own approach,
-              rebuilding papers carefully, and figuring out hardware, compute resources, and
-              physical space along the way.
-            </li>
-            <li>
-              Alongside research, I am building a specialty coffee software product focused on
-              one-stop workflow support and digital bean management.
-            </li>
-            <li>
-              Outside work, I enjoy singing, musicals, jazz, classical music, especially cello,
-              as well as fitness, hiking, and coffee.
-            </li>
+            <li>I am especially interested in the bridge between multimodal understanding and physical interaction.</li>
+            <li>I care about the full execution loop: problem framing, reproduction, debugging, deployment constraints, and iteration.</li>
+            <li>I prefer work that connects model intelligence with concrete robotic capability instead of staying purely conceptual.</li>
           </ul>
         </div>
       </section>
 
-      <section class="section" id="work">
+      <section class="section" id="research">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2>Selected builds and reproduced systems</h2>
+          <p class="section-lead">
+            Recently I have been working around VLA spatial understanding, 3D
+            reconstruction, and manipulation. These projects reflect how I learn:
+            think through the system, rebuild it carefully, and solve the practical
+            issues around hardware, compute, and physical setup.
+          </p>
+        </div>
+
         <details class="work-disclosure" open>
-          <summary class="section-heading">
-            <p class="eyebrow">Selected Work</p>
-            <h2>Reproduced research systems</h2>
+          <summary class="section-heading section-heading-compact">
+            <h3>Open project gallery</h3>
           </summary>
 
-        <article class="project feature-project">
-          <div class="project-copy">
-            <p class="project-kicker">Vision-Language-Action</p>
-            <h3>DreamVLA</h3>
-            <p>
-              DreamVLA integrates world-model imagination into robot manipulation policy
-              learning through image and depth prediction.
-            </p>
-          </div>
-          <div class="gallery three">
-            <figure>
-              <img src="dreamvla/dreamvla-depth.jpg" alt="DreamVLA depth prediction output" />
-              <figcaption>Depth prediction</figcaption>
-            </figure>
-            <figure>
-              <img src="dreamvla/dreamvla-image.jpg" alt="DreamVLA image prediction output" />
-              <figcaption>Image prediction</figcaption>
-            </figure>
-            <figure>
-              <img src="dreamvla/dreamvla-reproduction.jpeg" alt="DreamVLA reproduction result" />
-              <figcaption>Reproduction result</figcaption>
-            </figure>
-          </div>
+          <article class="project feature-project">
+            <div class="project-copy">
+              <p class="project-kicker">Vision-Language-Action</p>
+              <h3>DreamVLA</h3>
+              <p>
+                DreamVLA integrates world-model imagination into robot manipulation policy
+                learning through image and depth prediction.
+              </p>
+            </div>
+            <div class="gallery three">
+              <figure>
+                <img src="dreamvla/dreamvla-depth.jpg" alt="DreamVLA depth prediction output" />
+                <figcaption>Depth prediction</figcaption>
+              </figure>
+              <figure>
+                <img src="dreamvla/dreamvla-image.jpg" alt="DreamVLA image prediction output" />
+                <figcaption>Image prediction</figcaption>
+              </figure>
+              <figure>
+                <img src="dreamvla/dreamvla-reproduction.jpeg" alt="DreamVLA reproduction result" />
+                <figcaption>Reproduction result</figcaption>
+              </figure>
+            </div>
           </article>
 
           <article class="project">
-          <div class="project-copy">
-            <p class="project-kicker">3D Perception / Robot Manipulation</p>
-            <h3>Tesseract</h3>
-            <p>
-              Tesseract uses stereo depth estimation and 3D scene reconstruction to strengthen
-              robot policy learning with spatial representations.
-            </p>
-          </div>
-          <div class="gallery three">
-            <figure>
-              <img src="tesseract/tesseract-3d-reconstruction.jpg" alt="Tesseract 3D scene reconstruction" />
-              <figcaption>3D reconstruction</figcaption>
-            </figure>
-            <figure>
-              <img src="tesseract/tesseract-depth-primary.png" alt="Primary depth map from Tesseract" />
-              <figcaption>Primary depth map</figcaption>
-            </figure>
-            <figure>
-              <img src="tesseract/tesseract-depth-wrist.png" alt="Wrist depth map from Tesseract" />
-              <figcaption>Wrist depth map</figcaption>
-            </figure>
-          </div>
-          <div class="video-grid">
-            <video controls preload="metadata" src="tesseract/put_the_bottle_on_the_rack.mp4"></video>
-            <video controls preload="metadata" src="tesseract/val_0_turn_on_the_stove_0.mp4"></video>
-          </div>
-        </article>
-
-        <div class="project-grid">
-          <article class="project compact">
             <div class="project-copy">
-              <p class="project-kicker">3D Scene Understanding</p>
-              <h3>VGGT</h3>
+              <p class="project-kicker">3D Perception / Robot Manipulation</p>
+              <h3>Tesseract</h3>
               <p>
-                VGGT performs feed-forward 3D understanding, including camera poses, depth maps,
-                and point-cloud reconstruction in a single forward pass.
+                Tesseract uses stereo depth estimation and 3D scene reconstruction to strengthen
+                robot policy learning with spatial representations.
               </p>
             </div>
-            <div class="gallery two">
+            <div class="gallery three">
               <figure>
-                <img src="VGGT/VGGT.jpg" alt="VGGT model overview" />
-                <figcaption>Model overview</figcaption>
+                <img src="tesseract/tesseract-3d-reconstruction.jpg" alt="Tesseract 3D scene reconstruction" />
+                <figcaption>3D reconstruction</figcaption>
               </figure>
               <figure>
-                <img src="VGGT/VGGTpoint.jpeg" alt="VGGT point cloud reconstruction" />
-                <figcaption>Point cloud</figcaption>
+                <img src="tesseract/tesseract-depth-primary.png" alt="Primary depth map from Tesseract" />
+                <figcaption>Primary depth map</figcaption>
               </figure>
+              <figure>
+                <img src="tesseract/tesseract-depth-wrist.png" alt="Wrist depth map from Tesseract" />
+                <figcaption>Wrist depth map</figcaption>
+              </figure>
+            </div>
+            <div class="video-grid">
+              <video controls preload="metadata" src="tesseract/put_the_bottle_on_the_rack.mp4"></video>
+              <video controls preload="metadata" src="tesseract/val_0_turn_on_the_stove_0.mp4"></video>
             </div>
           </article>
 
-          <article class="project compact">
-            <div class="project-copy">
-              <p class="project-kicker">Open-Source VLA</p>
-              <h3>OpenVLA</h3>
-              <p>
-                OpenVLA is an open-source vision-language-action model for general-purpose robot
-                manipulation, fine-tuned from a large vision-language model.
-              </p>
-            </div>
-            <video controls preload="metadata" src="openvla/openvla-rollout.mp4"></video>
-          </article>
-        </div>
+          <div class="project-grid">
+            <article class="project compact">
+              <div class="project-copy">
+                <p class="project-kicker">3D Scene Understanding</p>
+                <h3>VGGT</h3>
+                <p>
+                  VGGT performs feed-forward 3D understanding, including camera poses, depth maps,
+                  and point-cloud reconstruction in a single forward pass.
+                </p>
+              </div>
+              <div class="gallery two">
+                <figure>
+                  <img src="VGGT/VGGT.jpg" alt="VGGT model overview" />
+                  <figcaption>Model overview</figcaption>
+                </figure>
+                <figure>
+                  <img src="VGGT/VGGTpoint.jpeg" alt="VGGT point cloud reconstruction" />
+                  <figcaption>Point cloud</figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <article class="project compact">
+              <div class="project-copy">
+                <p class="project-kicker">Open-Source VLA</p>
+                <h3>OpenVLA</h3>
+                <p>
+                  OpenVLA is an open-source vision-language-action model for general-purpose robot
+                  manipulation, fine-tuned from a large vision-language model.
+                </p>
+              </div>
+              <video controls preload="metadata" src="openvla/openvla-rollout.mp4"></video>
+            </article>
+          </div>
         </details>
       </section>
 
-      <section class="section split" id="skills">
+      <section class="section split" id="startup">
         <div>
-          <p class="eyebrow">Capabilities</p>
-          <h2>Engineering toolkit</h2>
+          <p class="eyebrow">Startup</p>
+          <h2>Building software around specialty coffee.</h2>
         </div>
-        <div class="skill-grid">
-          <div>
-            <h3>Programming</h3>
-            <p>Python, Java, PyTorch</p>
+        <div class="body-copy">
+          <p>
+            I am currently exploring a one-stop specialty coffee software product with a
+            focus on digital bean management, workflow organization, and better operational visibility.
+          </p>
+          <ul class="clean-list">
+            <li>I am interested in products that connect physical goods, data, and everyday decision making.</li>
+            <li>Smart hardware and software at the edge of the physical world are especially exciting to me.</li>
+            <li>I want to keep learning how product sense, engineering execution, and founder thinking come together.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="interests">
+        <div class="section-heading">
+          <p class="eyebrow">Interests</p>
+          <h2>Work, art, movement, and good conversations.</h2>
+        </div>
+        <div class="interest-grid">
+          <div class="interest-card">
+            <h3>Music</h3>
+            <p>I enjoy singing and spend time with musicals, jazz, and classical music, especially cello.</p>
           </div>
-          <div>
-            <h3>Machine Learning</h3>
-            <p>Transformer architecture, CS336-style LLM training optimization, multimodal inference</p>
+          <div class="interest-card">
+            <h3>Movement</h3>
+            <p>Fitness and hiking help me reset, think clearly, and keep a long-term rhythm for ambitious work.</p>
           </div>
-          <div>
-            <h3>Robotics</h3>
-            <p>IsaacLab, MuJoCo, RLinf inference framework, 6-DOF robot arm control</p>
+          <div class="interest-card">
+            <h3>Hackathons</h3>
+            <p>If you are building a strong hackathon team and want someone who likes technical depth and fast iteration, reach out.</p>
           </div>
-          <div>
-            <h3>Systems</h3>
-            <p>Linux, Git, AutoDL cloud platform, virtual environment management, profiling</p>
+          <div class="interest-card">
+            <h3>Coffee Chats</h3>
+            <p>I am always happy to talk about robotics, smart hardware, startup ideas, or simply meet over coffee.</p>
           </div>
         </div>
       </section>
 
-      <section class="section credentials">
-        <div>
-          <p class="eyebrow">Notes</p>
-          <h2>What I am building around the work</h2>
+      <section class="section" id="learning">
+        <div class="section-heading">
+          <p class="eyebrow">Learning</p>
+          <h2>What I am studying now.</h2>
+          <p class="section-lead">
+            My learning path combines self-study from open courses with university coursework
+            that supports a deeper foundation in mathematics, systems, and engineering.
+          </p>
         </div>
-        <div class="credential-list">
-          <p>Specialty coffee software for digital bean management and operational workflow</p>
-          <p>Interest in thoughtful product design, from niche tools to polished everyday systems</p>
-          <p>Singing, musicals, jazz, classical music, cello, fitness, hiking, and coffee</p>
+        <div class="course-grid">
+          <article class="course-panel">
+            <p class="project-kicker">Self-Study</p>
+            <h3>Open courses and references</h3>
+            <ul class="link-list">
+              <li><a href="https://stanford-cs336.github.io/spring2025/" target="_blank" rel="noreferrer">CS336: Language Modeling from Scratch</a></li>
+              <li><a href="https://web.stanford.edu/class/cs224n/" target="_blank" rel="noreferrer">CS224N: Natural Language Processing with Deep Learning</a></li>
+              <li><a href="http://cs231a.stanford.edu/" target="_blank" rel="noreferrer">CS231A: Computer Vision, From 3D Reconstruction to Recognition</a></li>
+              <li><a href="https://underactuated.mit.edu/" target="_blank" rel="noreferrer">Underactuated Robotics</a></li>
+            </ul>
+          </article>
+          <article class="course-panel">
+            <p class="project-kicker">University Courses</p>
+            <h3>SUSTech foundations</h3>
+            <ul class="link-list">
+              <li><a href="https://eee.sustech.edu.cn/feichen/teaching.html" target="_blank" rel="noreferrer">Signals and Systems</a></li>
+              <li><a href="https://math.sustech.edu.cn/e/liuzhihui" target="_blank" rel="noreferrer">Calculus and Linear Algebra</a></li>
+              <li><a href="https://math.sustech.edu.cn/e/wulongting" target="_blank" rel="noreferrer">Linear Algebra</a></li>
+              <li><a href="https://course-tao.sustech.edu.cn/kcxxweb/KcxxwebEnglishAPP" target="_blank" rel="noreferrer">SUSTech Course Search Portal</a></li>
+            </ul>
+          </article>
         </div>
       </section>
     </main>
@@ -298,7 +335,7 @@
     <footer class="footer" id="contact">
       <div>
         <p class="eyebrow">Contact</p>
-        <h2>Open to research collaboration and technical discussions.</h2>
+        <h2>Open to research collaboration, hackathon teams, startup conversations, and coffee chats.</h2>
       </div>
       <a href="mailto:12412457@mail.sustech.edu.cn">12412457@mail.sustech.edu.cn</a>
     </footer>

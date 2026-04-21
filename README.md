@@ -1,10 +1,10 @@
 # Li Xiaotong Portfolio
 
-This repository contains a static GitHub Pages portfolio for Li Xiaotong.
+This repository contains a static GitHub Pages personal website for Li Xiaotong.
 
 ## Overview
 
-The site presents research interests and reproduced work in embodied AI, robot learning, multimodal models, and EEG-based computational neuroscience.
+The site presents research interests, reproduced work, startup ideas, and learning paths around robotics, embodied AI, and multimodal systems.
 
 Featured projects:
 
